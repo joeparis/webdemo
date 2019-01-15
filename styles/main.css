@@ -1,0 +1,14 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    background: linear-gradient(217deg, #009aff, #71C7FF);
+    min-height: 100vh;
+}
