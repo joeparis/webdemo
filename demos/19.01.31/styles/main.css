@@ -100,3 +100,52 @@ p {
 .secondary-nav .nav-items:hover {}
 
 .secondary-nav .nav-items:hover a {}
+
+/* main content */
+article {
+  display: flex;
+  /* flex-direction, flex-wrap */
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+main {
+  /* flex-grow, flex-shrink, flex-basis */
+  flex: 2 1 auto;
+  width: 36em;
+}
+
+aside {
+  /* flex-grow, flex-shrink, flex-basis */
+  flex: 1 1 auto;
+  background-color: aquamarine;
+  width: 24em;
+}
+
+@media all and (min-width: 600px) {
+  aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  main {
+    flex: 3 0px;
+  }
+
+  aside {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+
+  .footer {
+    order: 4;
+  }
+}
