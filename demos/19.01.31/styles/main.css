@@ -111,15 +111,20 @@ article {
 
 main {
   /* flex-grow, flex-shrink, flex-basis */
-  flex: 2 1 auto;
-  width: 36em;
+  /* flex: 2 1 auto;
+  width: 36em; */
+  flex: 32em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 aside {
   /* flex-grow, flex-shrink, flex-basis */
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
+  /* width: 24em; */
   background-color: aquamarine;
-  width: 24em;
+  flex: 20em;
+  padding: 2em;
 }
 
 @media all and (min-width: 600px) {
