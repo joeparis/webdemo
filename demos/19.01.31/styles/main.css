@@ -53,6 +53,10 @@ small,
   font-size: 0.75em;
 }
 
+p {
+  margin-bottom: 1.2em;
+}
+
 /* format navigation */
 .main-nav {
   width: 100vw;
@@ -62,10 +66,13 @@ small,
   background-color: midnightblue;
   padding-left: 2rem;
   padding-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav-links {
+.main-nav .nav-links {
   list-style: none;
+  display: flex;
 }
 
 .nav-items a {
