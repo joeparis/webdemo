@@ -7,6 +7,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -46,15 +48,48 @@ h3 {
   font-size: 2.369em;
 }
 
-h4 {
-  font-size: 1.777em;
-}
-
-h5 {
-  font-size: 1.333em;
-}
-
 small,
 .text_small {
   font-size: 0.75em;
 }
+
+/* format navigation */
+.main-nav {
+  width: 100vw;
+  /* required to accommodate for vert scroll bar */
+  max-width: 100%;
+  /* 147colors.com */
+  background-color: midnightblue;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-items a {
+  display: inline-block;
+  padding: .8em 1em;
+}
+
+.main-nav .nav-items a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.nav-items:hover {
+  background-color: #eee;
+}
+
+.nav-items:hover a {
+  color: midnightblue;
+}
+
+.secondary-nav .nav-items {
+  display: inline;
+}
+
+.secondary-nav .nav-items:hover {}
+
+.secondary-nav .nav-items:hover a {}
